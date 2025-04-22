@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GamersGround</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="dd5.jpg" alt="Logo" class="logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="services.html">sign in</a></li>
+
+        </ul>
+    </nav>
+    <main class="vijay">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="signUpForm">
+                    <h1>Create Account</h1>
+                    <input type="text" placeholder="Name" id="signUpName" required />
+                    <input type="email" placeholder="email" id="signUpEmail" required />
+                    <input type="password" placeholder="Password" id="signUpPassword" required />
+                    <button type="button" onclick="signUp()">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="signInForm">
+                    <h1>Sign In</h1>
+                    <input type="email" placeholder="Email" id="signInEmail" required />
+                    <input type="password" placeholder="Password" id="signInPassword" required />
+                    <button type="button" onclick="signIn()">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
